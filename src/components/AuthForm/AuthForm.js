@@ -18,6 +18,7 @@ const AuthForm = () => {
     }, [pathname])
 
     const submit = async (user) => {
+        console.log('submit')
         try {
             console.log('submit')
             // якщо в нас не логінація, то ми реєструємо нового Юзера

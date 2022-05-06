@@ -1,5 +1,5 @@
 import {axiosService} from "./axios.service";
-import {urls} from "../constants/urls";
+import {urls} from "../constants";
 
 // Тут ми будемо створювати нашого user
 const userService = {
