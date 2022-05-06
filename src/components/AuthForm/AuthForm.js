@@ -19,6 +19,7 @@ const AuthForm = () => {
 
     const submit = async (user) => {
         try {
+            console.log('submit')
             // якщо в нас не логінація, то ми реєструємо нового Юзера
             if (!isLogin) {
                 await userService.create(user)
@@ -37,10 +38,11 @@ const AuthForm = () => {
                 <input type="text" placeholder={'username'} {...register('username')}/>
                 <input type="text" placeholder={'password'} {...register('password')}/>
             </form>
+            <button>{isLogin ? 'login' : 'register'}</button>
             <div>
 
             </div>
-            <button>{isLogin ? 'login' : 'register'}</button>
+
         </div>
 
 
